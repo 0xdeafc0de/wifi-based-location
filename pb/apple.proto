@@ -1,6 +1,16 @@
 syntax="proto3";
 
-message AppleReq { 
+message AppleReq {
+  message RequestWifi {
+    optional string mac = 1;
+  }
+  repeated RequestWifi wifis = 2;
+  optional int32 noise = 3;
+  optional int32 limit = 4;
+  optional string source = 5;
+}
+
+message WiFiGeoLoc { 
   string bssid = 1; 
   message Location {
     int64 lat = 1;
@@ -12,7 +22,7 @@ message AppleReq {
 
 message AppleResp {
   int64 unk1 = 1; 
-  repeated AppleReq wifi = 2; 
+  repeated WiFiGeoLoc wifi = 2; 
   int32 unk2 = 3; 
   int32 unk3 = 4; 
   string APIName = 5;

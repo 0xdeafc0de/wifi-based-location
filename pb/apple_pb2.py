@@ -24,17 +24,21 @@ _sym_db = _symbol_database.Default()
 
 
 
-DESCRIPTOR = _descriptor_pool.Default().AddSerializedFile(b'\n\x0b\x61pple.proto\"s\n\x08\x41ppleReq\x12\r\n\x05\x62ssid\x18\x01 \x01(\t\x12$\n\x08location\x18\x02 \x01(\x0b\x32\x12.AppleReq.Location\x1a\x32\n\x08Location\x12\x0b\n\x03lat\x18\x01 \x01(\x03\x12\x0b\n\x03lon\x18\x02 \x01(\x03\x12\x0c\n\x04unk1\x18\x03 \x01(\x03\"_\n\tAppleResp\x12\x0c\n\x04unk1\x18\x01 \x01(\x03\x12\x17\n\x04wifi\x18\x02 \x03(\x0b\x32\t.AppleReq\x12\x0c\n\x04unk2\x18\x03 \x01(\x05\x12\x0c\n\x04unk3\x18\x04 \x01(\x05\x12\x0f\n\x07\x41PIName\x18\x05 \x01(\tb\x06proto3')
+DESCRIPTOR = _descriptor_pool.Default().AddSerializedFile(b'\n\x0b\x61pple.proto\"\xb5\x01\n\x08\x41ppleReq\x12$\n\x05wifis\x18\x02 \x03(\x0b\x32\x15.AppleReq.RequestWifi\x12\x12\n\x05noise\x18\x03 \x01(\x05H\x00\x88\x01\x01\x12\x12\n\x05limit\x18\x04 \x01(\x05H\x01\x88\x01\x01\x12\x13\n\x06source\x18\x05 \x01(\tH\x02\x88\x01\x01\x1a\'\n\x0bRequestWifi\x12\x10\n\x03mac\x18\x01 \x01(\tH\x00\x88\x01\x01\x42\x06\n\x04_macB\x08\n\x06_noiseB\x08\n\x06_limitB\t\n\x07_source\"w\n\nWiFiGeoLoc\x12\r\n\x05\x62ssid\x18\x01 \x01(\t\x12&\n\x08location\x18\x02 \x01(\x0b\x32\x14.WiFiGeoLoc.Location\x1a\x32\n\x08Location\x12\x0b\n\x03lat\x18\x01 \x01(\x03\x12\x0b\n\x03lon\x18\x02 \x01(\x03\x12\x0c\n\x04unk1\x18\x03 \x01(\x03\"a\n\tAppleResp\x12\x0c\n\x04unk1\x18\x01 \x01(\x03\x12\x19\n\x04wifi\x18\x02 \x03(\x0b\x32\x0b.WiFiGeoLoc\x12\x0c\n\x04unk2\x18\x03 \x01(\x05\x12\x0c\n\x04unk3\x18\x04 \x01(\x05\x12\x0f\n\x07\x41PIName\x18\x05 \x01(\tb\x06proto3')
 
 _globals = globals()
 _builder.BuildMessageAndEnumDescriptors(DESCRIPTOR, _globals)
 _builder.BuildTopDescriptorsAndMessages(DESCRIPTOR, 'apple_pb2', _globals)
 if not _descriptor._USE_C_DESCRIPTORS:
   DESCRIPTOR._loaded_options = None
-  _globals['_APPLEREQ']._serialized_start=15
-  _globals['_APPLEREQ']._serialized_end=130
-  _globals['_APPLEREQ_LOCATION']._serialized_start=80
-  _globals['_APPLEREQ_LOCATION']._serialized_end=130
-  _globals['_APPLERESP']._serialized_start=132
-  _globals['_APPLERESP']._serialized_end=227
+  _globals['_APPLEREQ']._serialized_start=16
+  _globals['_APPLEREQ']._serialized_end=197
+  _globals['_APPLEREQ_REQUESTWIFI']._serialized_start=127
+  _globals['_APPLEREQ_REQUESTWIFI']._serialized_end=166
+  _globals['_WIFIGEOLOC']._serialized_start=199
+  _globals['_WIFIGEOLOC']._serialized_end=318
+  _globals['_WIFIGEOLOC_LOCATION']._serialized_start=268
+  _globals['_WIFIGEOLOC_LOCATION']._serialized_end=318
+  _globals['_APPLERESP']._serialized_start=320
+  _globals['_APPLERESP']._serialized_end=417
 # @@protoc_insertion_point(module_scope)
