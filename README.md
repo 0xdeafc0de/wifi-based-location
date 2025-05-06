@@ -11,7 +11,7 @@ This tool accesses undocumented Apple APIs. Use responsibly and **only for educa
 
 This implementation is inspired by:
 
-- [iSniff-GPS](https://github.com/hackgnar/iSniff-GPS)
+- [iSniff-GPS](https://github.com/hubert3/iSniff-GPS/tree/master/iSniff_GPS)
 - Research by François-Xavier Aguessy and Côme Demoustier  
   ([PDF Link](http://fxaguessy.fr/rapport-pfe-interception-ssl-analyse-donnees-localisation-smartphones/))
 
@@ -39,4 +39,6 @@ lat, long = get_lat_long_from_apple("XX:XX:XX:XX:1c:dc")
 print(f"Lat: {lat}, Long: {long}")
 ```
 ## Output
+```bash
 Lat, Long for XX:XX:XX:XX:1c:dc = (13.02603054, 77.7641983)
+```
