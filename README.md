@@ -32,7 +32,7 @@ If you need to regenerate the code use protoc as below
 protoc --python_out=. apple.proto
 ```
 
-To get the Lat, Long of a location, find out the BSSID from the nearest AP (e.g. Your Home WiFI AP) and pass it as below -
+To get the Lattitude and Longitude coordination of a location, find out the BSSID from the nearest AP (e.g. Your Home WiFI AP) and pass it as below -
 
 ```python
 lat, long = get_lat_long_from_apple("XX:XX:XX:XX:1c:dc")
